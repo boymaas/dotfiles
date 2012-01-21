@@ -3,6 +3,14 @@
 Basic commandline configurations files. VimRc and EmacsRc are placed in seperate repositories. 
 Planning to transfer from bash to zsh so no profiles included.
 
+## iTerm2
+
+Works best with iTerm2
+
+## Zsh based
+
+Uses oh-my-sh: https://github.com/robbyrussell/oh-my-zsh.git
+
 ## Git configuration
 
 `.gitconfig` and `.githelpers`
