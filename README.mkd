@@ -1,5 +1,8 @@
 # Config files
 
+Basic commandline configurations files. VimRc and EmacsRc are placed in seperate repositories. 
+Planning to transfer from bash to zsh so no profiles included.
+
 ## Git configuration
 
 `.gitconfig` and `.githelpers`
