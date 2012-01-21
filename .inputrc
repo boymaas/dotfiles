@@ -1,0 +1,25 @@
+# vi ofcourse
+#set editing-mode vi
+#set keymap vi
+
+set prefer-visible-bell
+
+set visible-stats on
+
+# pageup and down searches history ..
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[C": forward-char
+"\e[D": backward-char
+
+"\M-o": "\C-p\C-a\M-f "
+
+# cycle through history
+set show-all-if-ambiguous on
+"\M-s": menu-complete
+
+# magic space
+$if Bash
+	Space: magic-space
+$endif
