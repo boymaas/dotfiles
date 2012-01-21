@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="blinks"
+ZSH_THEME="miloshadzic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -29,7 +30,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby)
+plugins=(rvm rails3)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,7 +39,6 @@ source $ZSH/oh-my-zsh.sh
 # Configuring rvm .. make sure this is after all PATHs are configured
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
-# MacPorts Installer addition on 2010-11-02_at_01:45:50: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
+# and last, but first in becoming add our own
+# scripts, also add brew's bin path
+export PATH=$HOME/bin:/usr/local/bin:$PATH
