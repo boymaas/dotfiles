@@ -1,0 +1,25 @@
+# Config files
+
+## Git configuration
+
+`.gitconfig` and `.githelpers`
+
+    git ra
+
+presents an enhanced log, uses an alias chain and .githelpers to present a
+useful commandline log with structure.
+
+    git aa
+
+does a git add --all, which makes the current state of a directory represent
+the state to be synched. So deleted files will be removed, added files added,
+etc... 
+
+    git dc --> diff cached
+    git st --> status
+    git ci --> commit
+    git co --> checkout
+
+
+
+
