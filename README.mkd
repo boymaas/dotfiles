@@ -3,9 +3,41 @@
 Basic commandline configurations files. VimRc and EmacsRc are placed in seperate repositories. 
 Planning to transfer from bash to zsh so no profiles included.
 
-## iTerm2
+## Installing
 
-Works best with iTerm2
+Assumes RVM and brew is installed
+
+### iTerm2
+
+Works best with iTerm2, install and download.
+
+### Grab submodules
+
+  git submodules init
+  git submodules update
+
+and for .emacs.d, and .vim.
+
+### Activate zsh
+
+  chsh -s `which zsh`
+  /usr/bin/env zsh
+  source ~/.zshrc
+
+### Set colorscheme iTerm2
+
+  .setup-dependencies/solarized/iterm2-colors-solarized/
+
+### Install MacVim
+
+Use system ruby .. since command-t depend on using system ruby
+
+  rvm use system 
+  brew install macvim --override-system-vim --enable-clipboard 
+
+  cd .vim/bundle/command-t/ruby/command-t/
+  ruby extconf.rb
+  make
 
 ## Zsh based
 
