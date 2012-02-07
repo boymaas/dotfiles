@@ -38,6 +38,7 @@ PROMPT='%{$fg[cyan]%}%4~%{$reset_color%}%{$fg[red]%}|%{$reset_color%}$(git_promp
 plugins=(rvm rails3 git git-flow)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # Customize to your needs...
 #
