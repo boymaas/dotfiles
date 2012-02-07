@@ -35,7 +35,7 @@ PROMPT='%{$fg[cyan]%}%4~%{$reset_color%}%{$fg[red]%}|%{$reset_color%}$(git_promp
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rvm rails3)
+plugins=(rvm rails3 git git-flow)
 
 source $ZSH/oh-my-zsh.sh
 

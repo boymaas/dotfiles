@@ -7,6 +7,7 @@ Planning to transfer from bash to zsh so no profiles included.
 
 Assumes RVM and brew is installed
 
+
 ### iTerm2
 
 Works best with iTerm2, install and download.
@@ -34,6 +35,14 @@ Use system ruby .. since command-t depend on using system ruby
 
   rvm use system 
   brew install macvim --override-system-vim --enable-clipboard 
+
+### Install vimrc
+
+  git clone https://github.com/boymaas/vimfiles.git
+  mv vimfiles .vim
+  ln -s .vimrc .vim/vimrc
+
+Build command-t helper
 
   cd .vim/bundle/command-t/ruby/command-t/
   ruby extconf.rb
@@ -63,6 +72,8 @@ etc...
     git ci --> commit
     git co --> checkout
 
+# Install git-flow
 
+    brew install git-flow
 
 
