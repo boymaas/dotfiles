@@ -1,17 +1,14 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="blinks"
-ZSH_THEME="miloshadzic"
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}%{$fg[green]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}*%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-PROMPT='%{$fg[cyan]%}%4~%{$reset_color%}%{$fg[red]%}|%{$reset_color%}$(git_prompt_info)%{$fg[cyan]%}>%{$reset_color%}'
+#ZSH_THEME="miloshadzic"
+#ZSH_THEME="boymaas"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -39,6 +36,10 @@ plugins=(rvm rails3 git git-flow)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
+
+# Load my theme this way ... theme loader is not correct in 
+# oh-my-zsh implementation
+source $ZSH_CUSTOM/boymaas.zsh-theme
 
 # Customize to your needs...
 #
