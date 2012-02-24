@@ -49,3 +49,20 @@ source $ZSH_CUSTOM/boymaas.zsh-theme
 # and last, but first in becoming add our own
 # scripts, also add brew's bin path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# do not want immediate sharing of history
+# want to run `fc -R` explicitly
+# and have a history per shell, on new terms
+# I want latest history
+unsetopt sharehistory
+setopt incappendhistory
+
+# Start up an editor when I press ESC-e
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '\ee' edit-command-line
+
+# Want my completetions to be categorized
+# the list seperator reminds me more of shell commands
+zstyle ':completion:*:descriptions' format %B%d%b
+zstyle ':completion:*' list-separator '#'
