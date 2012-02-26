@@ -66,3 +66,5 @@ bindkey '\ee' edit-command-line
 # the list seperator reminds me more of shell commands
 zstyle ':completion:*:descriptions' format %B%d%b
 zstyle ':completion:*' list-separator '#'
+
+alias om='org-mode'
