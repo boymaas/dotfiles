@@ -43,9 +43,6 @@ source $ZSH_CUSTOM/boymaas.zsh-theme
 
 # Customize to your needs...
 #
-# Configuring rvm .. make sure this is after all PATHs are configured
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
 # and last, but first in becoming add our own
 # scripts, also add brew's bin path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -68,3 +65,13 @@ zstyle ':completion:*:descriptions' format %B%d%b
 zstyle ':completion:*' list-separator '#'
 
 alias om='org-mode'
+
+# Don't search only first work, use whole prefix
+bindkey "^[[A" history-beginning-search-backward  
+bindkey "^[[B" history-beginning-search-forward
+
+ssh-add
+
+# Configuring rvm .. make sure this is after all PATHs are configured
+ [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
