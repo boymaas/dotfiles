@@ -75,3 +75,9 @@ ssh-add
 # Configuring rvm .. make sure this is after all PATHs are configured
  [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
+
+export EDITOR="vim"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+alias be='bundle exec'
