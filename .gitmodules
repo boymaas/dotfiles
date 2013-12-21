@@ -3,4 +3,4 @@
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "tmux-config"]
 	path = tmux-config
-	url = git@github.com:boymaas/tmux-config.git
+	url = https://@github.com:boymaas/tmux-config.git
