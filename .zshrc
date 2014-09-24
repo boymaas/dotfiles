@@ -32,7 +32,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rvm rails3 git git-flow)
+plugins=(rails git git-flow)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -70,14 +70,10 @@ alias om='org-mode'
 bindkey "^[[A" history-beginning-search-backward  
 bindkey "^[[B" history-beginning-search-forward
 
-ssh-add
-
-# Configuring rvm .. make sure this is after all PATHs are configured
- [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
-
-export EDITOR="vim"
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+#ssh-add
 
 alias be='bundle exec'
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
