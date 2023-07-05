@@ -1,3 +1,7 @@
+# Delta pager https://github.com/dandavison/delta#installation
+
+[core]
+  pager = delta
 [user]
 	name = Boy Maas
 	email = boy.maas@gmail.com
@@ -32,8 +36,27 @@
   ds = diff --stat=160,120
   dh1 = diff HEAD~1
 
+[fetch]
+  prune = true
 [merge]
   tool = vimdiff
 
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+
+[delta]
+    features = decorations
+
+[delta "interactive"]
+    keep-plus-minus-markers = false
+
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
 
 
